@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register a course</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        text-align: center;
+    }
+    form{
+        margin: auto;
+        padding: 20px;
+        width: 400px;
+        background-color: #fff;
+    }
+    input,select,button{
+        width: 90%;
+        padding: 10px;
+        margin: 10px;
+    }
+    button{
+        background-color: aqua;
+        color: black;
+        font-weight: bold;
+        font-size: medium;
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: burlywood;
+    }
+</style>
+<body>
+    <h1 style="color: brown;">Unlock a course with start registring</h1>
+
+    <form action="http://localhost:8080/courses/register" method="post">
+        <label for="name">Enter your name:</label><br>
+        <input name="name" type="text"><br><br>
+        <label for="email">Enter your emailId:</label><br>
+        <input name="emailId" type="email"><br><br>
+
+        <label for="course">Choose a course</label><br>
+        <select id="courses" name="courseName">
+
+            <option value="Java Essentials">Java Essentials</option>
+            <option value="Web technology">Web technology</option>
+            <option value="Mysql">Mysql</option>
+
+        </select>
+        <br><br>
+        <button type="submit">submit</button>
+    </form>
+</body>
+</html>

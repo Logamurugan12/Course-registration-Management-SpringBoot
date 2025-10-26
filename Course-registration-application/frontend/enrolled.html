@@ -1,0 +1,30 @@
+<html>
+<head>
+    <script type="text/javascript" src="./script.js"></script>
+</head>
+<style>
+    td{
+        background-color: lightblue;
+    }
+    body{
+        padding: 50px;
+    }
+</style>
+<body>
+    <table align="center" border="1" style="background-color: black;">
+            <tr align="center" style="background-color: aqua;">
+                <th width="100">Name</th>
+                <th width="250">Email Id</th>
+                <th width="150">Course Name</th>
+            </tr>
+        <tbody align="center" id="enrolledtable"></tbody>
+    </table>
+
+    <script type="text/javascript">
+        window.onload = function (){
+            showEntrolledStudents();
+        };
+    </script>
+    
+</body>
+</html>
